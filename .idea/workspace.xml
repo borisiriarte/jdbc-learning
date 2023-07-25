@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3af5663-9f40-44b1-9e6d-68815a79a204" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App_JDBC/App_Query.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Db_Sample/Db_Modify.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Db_Sample/DesignInAdvance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9ebb88a7-2be3-48af-a26a-a0774734d424.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9ebb88a7-2be3-48af-a26a-a0774734d424.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Db_Sample/Db_Jdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Db_Sample/Db_Jdbc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App_JDBC/App_Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App_JDBC/App_Query.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1690249698332</updated>
       <workItem from="1690249699557" duration="1247000" />
-      <workItem from="1690297638975" duration="4442000" />
+      <workItem from="1690297638975" duration="5590000" />
     </task>
     <servers />
   </component>

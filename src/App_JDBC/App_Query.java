@@ -2,6 +2,11 @@ package App_JDBC;
 
 import javax.swing.*;
 import java.awt.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class App_Query {
   public static void main(String[] args) {
@@ -12,8 +17,8 @@ public class App_Query {
 }
 
 class App_Layout extends JFrame {
-  private JComboBox secciones;
-  private JComboBox paises;
+  private JComboBox<String> secciones;
+  private JComboBox<String> paises;
   private JTextArea resultado;
 
   public App_Layout(){
@@ -47,22 +52,30 @@ class App_Layout extends JFrame {
     JButton botonConsulta=new JButton("Consulta");
     add(botonConsulta, BorderLayout.SOUTH);
 
-    //PONEMOS EL BOTON A LA ESCUCHA
-    //EL CONSTRUCTOR DE A2_ControladorBotonEjecuta, RECIBE POR PARÁMETRO A LA CLASE A0_MarcoApp, DE ESTA MANERA,..
-    //LA CLASE A2_ControladorBotonEjecuta PUEDE IDENTIFICAR LO QUE HA SELECCIONADO EL USUARIO.
-    /*botonConsulta.addActionListener(new A2_ControladorBotonEjecuta(this));*/
+    //  ------------------ Data Base Connection ------------------
+    try {
+      Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc_course", "root", "");
+      Statement query = connection.createStatement();
 
+      String pQuery = "SELECT DISTINCTROW section_art FROM products_table";
+      ResultSet result = query.executeQuery(pQuery);
 
+      while (result.next()) {
+        secciones.addItem(result.getString("section_art"));
+      }
 
-    //------ PONEMOS EL MARCO A LA ESCUCHA DE LO PROGRAMADO EN CLASS A1_ControladorCargaSecciones --------
+      pQuery = "SELECT DISTINCTROW home_country FROM products_table";
+      result = query.executeQuery(pQuery);
 
-    //USAMOS ADDWINDOWLISTENER E INSTANCIAMOS DIRECTAMENTE LA CLASE INDICADA.
-    //AL CONSTRUCTOR DE LA CLASE A1_ControladorCargaSecciones, LE PASAMOS "this",..
-    //para decirle que estamos poniendo a la clase A0_MarcoApp, a la escucha.
+      while (result.next()) {
+        paises.addItem(result.getString("home_country"));
+      }
 
-    /*addWindowListener(new A1_ControladorCargaMenu(this));*/
-
-    //---------------------------------------------------------------------------
-
+      connection.close();
+      query.close();
+      result.close();
+    } catch(SQLException e) {
+      throw new RuntimeException(e);
+    }
   }
 }
