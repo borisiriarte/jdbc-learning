@@ -17,6 +17,7 @@ public class Db_Jdbc {
       while (resultSet.next()) {
         System.out.println(resultSet.getString("id_article"));
         System.out.println(resultSet.getString("name"));
+        System.out.println(resultSet.getDate("date_in"));
       }
 
       // 5- Close connection
