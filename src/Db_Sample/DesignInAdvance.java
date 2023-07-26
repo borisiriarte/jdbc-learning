@@ -15,14 +15,15 @@ public class DesignInAdvance {
       PreparedStatement preparedStatement = sqlConnection.prepareStatement(mySqlQuery);
 
       // 3- Set query parameters
-      preparedStatement.setString(1, "Jugueteria");
-      preparedStatement.setDouble(2, 10);
+      preparedStatement.setString(1, "*");
+      preparedStatement.setDouble(2, 200);
 
       // 4- Execute query and traverse query parameters
       ResultSet resultSet = preparedStatement.executeQuery();
 
       while (resultSet.next()) {
-        System.out.println(resultSet.getString("id_article") + " - " + resultSet.getString("name") + " - " + resultSet.getDouble("price"));
+        System.out.println(resultSet.getInt(1) + " - " + resultSet.getString(2) + " - " + resultSet.getString(
+            3) + " - " + resultSet.getDouble(4) + " - " + resultSet.getDate(5));
       }
 
       // 5- Close connection
