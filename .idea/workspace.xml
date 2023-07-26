@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3af5663-9f40-44b1-9e6d-68815a79a204" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/App_MVC/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App_MVC/Vista/App_Layout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9ebb88a7-2be3-48af-a26a-a0774734d424.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9ebb88a7-2be3-48af-a26a-a0774734d424.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App_MVC/Controlador/Connection_Db.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App_MVC/Controlador/Load_Sections_Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App_MVC/Modelo/Db_Products.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App_MVC/Modelo/Load_Sections.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App_JDBC/App_Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App_JDBC/App_Query.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Db_Sample/DesignInAdvance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Db_Sample/DesignInAdvance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App_MVC/Vista/App_Layout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App_MVC/Vista/App_Layout.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +89,9 @@
       <workItem from="1690249699557" duration="1247000" />
       <workItem from="1690297638975" duration="5639000" />
       <workItem from="1690328421255" duration="508000" />
-      <workItem from="1690329631730" duration="6243000" />
+      <workItem from="1690329631730" duration="6505000" />
+      <workItem from="1690386633390" duration="2147000" />
+      <workItem from="1690395959304" duration="2039000" />
     </task>
     <servers />
   </component>
@@ -103,6 +105,11 @@
           <url>file://$PROJECT_DIR$/src/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/App_MVC/Modelo/Load_Sections.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

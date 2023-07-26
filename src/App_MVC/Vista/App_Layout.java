@@ -1,9 +1,10 @@
 package App_MVC.Vista;
 
+import App_MVC.Controlador.Load_Sections_Controller;
+
 import javax.swing.*;
 import java.awt.*;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
+
 
 public class App_Layout extends JFrame{
   private JComboBox<String> secciones;
@@ -38,6 +39,23 @@ public class App_Layout extends JFrame{
     add(resultado, BorderLayout.CENTER);
 
     JButton botonConsulta = new JButton("Consulta");
+    addWindowListener(new Load_Sections_Controller(this));
+    add(botonConsulta, BorderLayout.SOUTH);
+  }
 
+  public void setSecciones(JComboBox<String> secciones) {
+    this.secciones = secciones;
+  }
+
+  public void setPaises(JComboBox<String> paises) {
+    this.paises = paises;
+  }
+
+  public JComboBox< String > getSecciones() {
+    return secciones;
+  }
+
+  public JComboBox< String > getPaises() {
+    return paises;
   }
 }
