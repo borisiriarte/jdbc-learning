@@ -25,14 +25,16 @@ public class Load_Menus {
             rsCountry = countries.executeQuery("SELECT DISTINCTROW home_country FROM products_table");
 
             product = new Db_Products();
+            rsCountry.next();
+            rsSection.next();
             product.setSection(rsSection.getString("section_art"));
             product.setCountry(rsCountry.getString("home_country"));
 
-            rsSection.close();
-            rsCountry.close();
-            sections.close();
+            /*rsSection.close();
+            rsCountry.close();*/
+            /*sections.close();
             countries.close();
-            access_Db.close();
+            access_Db.close();*/
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -45,3 +47,6 @@ public class Load_Menus {
     }
 
 }
+
+
+

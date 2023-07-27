@@ -17,6 +17,7 @@ public class Run_Btn_Controller implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
+        app_layout.getResultado().setText("");
         String selectedSection = (String) app_layout.getSecciones().getSelectedItem();
         String selectedCountry = (String) app_layout.getPaises().getSelectedItem();
 

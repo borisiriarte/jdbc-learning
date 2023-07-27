@@ -27,6 +27,7 @@ public class runQueries {
             this.ps.setString(1, section);
             this.rs = this.ps.executeQuery();
         }
+
         if(!section.equals("Todos") && !country.equals("Todos")) {
             query = "SELECT * FROM products_table WHERE section_art = ? AND home_country = ?";
             this.ps = conect.prepareStatement(query);
