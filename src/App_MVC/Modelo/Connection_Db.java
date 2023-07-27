@@ -1,4 +1,4 @@
-package App_MVC.Controlador;
+package App_MVC.Modelo;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,9 +1,11 @@
 package App_MVC.Vista;
 
-import App_MVC.Controlador.Load_Sections_Controller;
+import App_MVC.Controlador.Load_Menus_Controller;
+import App_MVC.Controlador.Run_Btn_Controller;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionListener;
 
 
 public class App_Layout extends JFrame{
@@ -38,24 +40,20 @@ public class App_Layout extends JFrame{
     add(menus, BorderLayout.NORTH);
     add(resultado, BorderLayout.CENTER);
 
+    addWindowListener(new Load_Menus_Controller(this));
+
     JButton botonConsulta = new JButton("Consulta");
-    addWindowListener(new Load_Sections_Controller(this));
     add(botonConsulta, BorderLayout.SOUTH);
-  }
-
-  public void setSecciones(JComboBox<String> secciones) {
-    this.secciones = secciones;
-  }
-
-  public void setPaises(JComboBox<String> paises) {
-    this.paises = paises;
+    botonConsulta.addActionListener(new Run_Btn_Controller(this));
   }
 
   public JComboBox< String > getSecciones() {
     return secciones;
   }
-
   public JComboBox< String > getPaises() {
     return paises;
   }
+    public JTextArea getResultado() {
+        return resultado;
+    }
 }
