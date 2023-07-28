@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3af5663-9f40-44b1-9e6d-68815a79a204" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Db_StoragedProcedures/Consult_Clients.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client_db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Db_StoragedProcedures/Upadate_Products.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Db_Transactions/Insert_Clients_Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Db_Transactions/Product_Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/products_db.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/9ebb88a7-2be3-48af-a26a-a0774734d424.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9ebb88a7-2be3-48af-a26a-a0774734d424.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/client_db.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "database.query.execution",
+    "settings.editor.selected.configurable": "preferences.sourceCode",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -58,13 +60,26 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Consult_Clients">
+  <component name="RunManager" selected="Application.Product_Transaction">
     <configuration name="Consult_Clients" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Db_StoragedProcedures.Consult_Clients" />
       <module name="jdbc" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Db_StoragedProcedures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Insert_Clients_Orders" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Db_Transactions.Insert_Clients_Orders" />
+      <module name="jdbc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Db_Transactions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,8 +100,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Product_Transaction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Db_Transactions.Product_Transaction" />
+      <module name="jdbc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Db_Transactions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Upadate_Products" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Db_StoragedProcedures.Upadate_Products" />
+      <module name="jdbc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Db_StoragedProcedures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Product_Transaction" />
+        <item itemvalue="Application.Insert_Clients_Orders" />
+        <item itemvalue="Application.Upadate_Products" />
         <item itemvalue="Application.Consult_Clients" />
         <item itemvalue="Application.Main" />
       </list>
@@ -108,7 +152,8 @@
       <workItem from="1690395959304" duration="2299000" />
       <workItem from="1690411268047" duration="1950000" />
       <workItem from="1690415797354" duration="5159000" />
-      <workItem from="1690473838002" duration="4414000" />
+      <workItem from="1690473838002" duration="4509000" />
+      <workItem from="1690491301359" duration="8017000" />
     </task>
     <servers />
   </component>
