@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3af5663-9f40-44b1-9e6d-68815a79a204" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Db_MetaData/Info_MetaData_0.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Db_MetaData/Info_MetaData_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Db_Practice/App_Db_Selector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Db_Practice/db_credentials.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/9ebb88a7-2be3-48af-a26a-a0774734d424.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9ebb88a7-2be3-48af-a26a-a0774734d424.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +62,20 @@
       <recent name="Db_MetaData" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Info_MetaData_1">
+  <component name="RunManager" selected="Application.App_Db_Selector">
+    <configuration name="App_Db_Selector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Db_Practice.App_Db_Selector" />
+      <module name="jdbc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Db_Practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Info_MetaData_0" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Db_MetaData.Info_MetaData_0" />
       <module name="jdbc" />
@@ -116,26 +128,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Upadate_Products" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Db_StoragedProcedures.Upadate_Products" />
-      <module name="jdbc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Db_StoragedProcedures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App_Db_Selector" />
         <item itemvalue="Application.Info_MetaData_1" />
         <item itemvalue="Application.Info_MetaData_0" />
         <item itemvalue="Application.Product_Transaction" />
         <item itemvalue="Application.Insert_Clients_Orders" />
-        <item itemvalue="Application.Upadate_Products" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +156,7 @@
       <workItem from="1690415797354" duration="5159000" />
       <workItem from="1690473838002" duration="4509000" />
       <workItem from="1690491301359" duration="8331000" />
-      <workItem from="1690926875270" duration="2589000" />
+      <workItem from="1690926875270" duration="10571000" />
     </task>
     <servers />
   </component>

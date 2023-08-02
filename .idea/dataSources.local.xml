@@ -13,8 +13,15 @@
         <introspection-scope>
           <node kind="schema">
             <name qname="@" />
+            <name qname="curso_sql" />
+            <name qname="curso_sql1" />
+            <name qname="for_myself" />
+            <name qname="information_schema" />
             <name qname="jdbc_course" />
+            <name qname="mysql" />
+            <name qname="performance_schema" />
             <name qname="storaged_procedures" />
+            <name qname="sys" />
           </node>
         </introspection-scope>
       </schema-mapping>
