@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3af5663-9f40-44b1-9e6d-68815a79a204" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Db_Practice/App_Db_Selector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Db_Practice/db_credentials.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9ebb88a7-2be3-48af-a26a-a0774734d424.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9ebb88a7-2be3-48af-a26a-a0774734d424.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Db_Practice/App_Db_Selector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Db_Practice/App_Db_Selector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +152,7 @@
       <workItem from="1690415797354" duration="5159000" />
       <workItem from="1690473838002" duration="4509000" />
       <workItem from="1690491301359" duration="8331000" />
-      <workItem from="1690926875270" duration="10571000" />
+      <workItem from="1690926875270" duration="11033000" />
     </task>
     <servers />
   </component>

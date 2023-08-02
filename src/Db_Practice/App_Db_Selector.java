@@ -33,6 +33,7 @@ class sheet extends JPanel {
   private Connection connection;
   private FileReader input;
   private String db;
+
   public sheet() {
     setLayout(new BorderLayout());
     tables = new JComboBox<>();
@@ -74,29 +75,7 @@ class sheet extends JPanel {
     } catch(SQLException e) {
       e.printStackTrace();
     } catch(IOException e) {
-      JFileChooser fileChooser = new JFileChooser();
-      int result = fileChooser.showOpenDialog(this);
-      if(result == JFileChooser.APPROVE_OPTION) {
-        try {
-          input = new FileReader(fileChooser.getSelectedFile());
-          BufferedReader reader = new BufferedReader(input);
-
-          for(int i = 0; i < 3; i++) {
-            data[i] = reader.readLine();
-          }
-
-          db = data[0];
-          String url = "jdbc:mysql://localhost:3306/" + db;
-          String user = data[1];
-          String password = data[2];
-
-          connection = DriverManager.getConnection(url, user, password);
-
-          input.close();
-        } catch(SQLException | IOException ex) {
-          ex.printStackTrace();
-        }
-      }
+      searchFile();
     }
   }
 
@@ -138,6 +117,33 @@ class sheet extends JPanel {
       }
     } catch(SQLException e) {
       e.printStackTrace();
+    }
+  }
+
+  public void searchFile() {
+    JFileChooser fileChooser = new JFileChooser();
+    String[] data = new String[3];
+    int result = fileChooser.showOpenDialog(this);
+    if(result == JFileChooser.APPROVE_OPTION) {
+      try {
+        input = new FileReader(fileChooser.getSelectedFile());
+        BufferedReader reader = new BufferedReader(input);
+
+        for(int i = 0; i < 3; i++) {
+          data[i] = reader.readLine();
+        }
+
+        db = data[0];
+        String url = "jdbc:mysql://localhost:3306/" + db;
+        String user = data[1];
+        String password = data[2];
+
+        connection = DriverManager.getConnection(url, user, password);
+
+        input.close();
+      } catch(SQLException | IOException ex) {
+        ex.printStackTrace();
+      }
     }
   }
 }
