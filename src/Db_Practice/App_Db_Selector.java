@@ -93,11 +93,7 @@ class sheet extends JPanel {
           connection = DriverManager.getConnection(url, user, password);
 
           input.close();
-        } catch(SQLException ex) {
-          ex.printStackTrace();
-        } catch(FileNotFoundException ex) {
-          ex.printStackTrace();
-        } catch(IOException ex) {
+        } catch(SQLException | IOException ex) {
           ex.printStackTrace();
         }
       }
